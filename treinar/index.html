@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Onde treinar CTF · CyberHue BR</title>
+  <meta name="description" content="Plataformas gratuitas e freemium para treinar CTF e cibersegurança: web, pwn, reversing, crypto, forense e pentest. Curadoria do time CyberHue BR.">
+  <meta name="theme-color" content="#06120f">
+  <meta property="og:site_name" content="CyberHue BR">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Onde treinar CTF · CyberHue BR">
+  <meta property="og:description" content="Plataformas gratuitas e freemium para treinar CTF e cibersegurança: web, pwn, reversing, crypto, forense e pentest. Curadoria do time CyberHue BR.">
+  <meta property="og:image" content="https://www.cyberhue-br.dev/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://www.cyberhue-br.dev/treinar/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.cyberhue-br.dev/treinar/">
+  <link rel="icon" href="/assets/logo.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <canvas id="rain" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="/" aria-label="CyberHue BR — início">
+      <img src="/assets/logo.jpg" alt="" width="40" height="40">
+      <span>CYBER<b>HUE</b> <i>BR</i></span>
+    </a>
+    <nav aria-label="Principal">
+      <a href="/#sobre">Sobre</a>
+      <a href="/#categorias">Categorias</a>
+      <a href="/#rotina">Rotina</a>
+      <a class="nav-page" href="/agenda/">Agenda</a>
+      <a class="nav-page" href="/treinar/" aria-current="page">Treinar</a>
+      <a href="/#desafio">Desafio</a>
+      <a class="nav-cta" href="/#entrar">Entrar</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section id="treinar" class="block page">
+      <p class="kicker">// plataformas recomendadas</p>
+      <h1 class="page-title"><span class="hash">#</span> onde treinar</h1>
+      <p class="section-lead">Plataformas que a gente usa e recomenda. Começou agora? Vai na ordem: <b>primeiros passos</b>, depois escolhe uma categoria e aprofunda.</p>
+      <div class="grid train">
+        <article class="card">
+          <h3>Primeiros passos</h3>
+          <ul class="links">
+            <li><a href="https://picoctf.org/" target="_blank" rel="noopener noreferrer">picoCTF ↗</a><span>CTF educacional da Carnegie Mellon, ótimo para começar. <em>grátis</em></span></li>
+            <li><a href="https://overthewire.org/wargames/bandit/" target="_blank" rel="noopener noreferrer">OverTheWire: Bandit ↗</a><span>Linux e terminal na prática, nível a nível. <em>grátis</em></span></li>
+            <li><a href="https://tryhackme.com/" target="_blank" rel="noopener noreferrer">TryHackMe ↗</a><span>Salas guiadas com máquina no navegador. <em>freemium</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Web</h3>
+          <ul class="links">
+            <li><a href="https://portswigger.net/web-security" target="_blank" rel="noopener noreferrer">PortSwigger Web Security Academy ↗</a><span>A melhor referência de web: teoria + labs. <em>grátis</em></span></li>
+            <li><a href="https://owasp.org/www-project-juice-shop/" target="_blank" rel="noopener noreferrer">OWASP Juice Shop ↗</a><span>App vulnerável para rodar local e quebrar. <em>grátis</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Pwn e reversing</h3>
+          <ul class="links">
+            <li><a href="https://pwn.college/" target="_blank" rel="noopener noreferrer">pwn.college ↗</a><span>Curso completo de exploração binária da ASU. <em>grátis</em></span></li>
+            <li><a href="https://crackmes.one/" target="_blank" rel="noopener noreferrer">crackmes.one ↗</a><span>Crackmes da comunidade para treinar RE. <em>grátis</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Crypto</h3>
+          <ul class="links">
+            <li><a href="https://cryptohack.org/" target="_blank" rel="noopener noreferrer">CryptoHack ↗</a><span>Desafios de criptografia do básico ao avançado. <em>grátis</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Forense e blue team</h3>
+          <ul class="links">
+            <li><a href="https://cyberdefenders.org/" target="_blank" rel="noopener noreferrer">CyberDefenders ↗</a><span>Labs de DFIR e análise de tráfego. <em>freemium</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Máquinas e pentest</h3>
+          <ul class="links">
+            <li><a href="https://www.hackthebox.com/" target="_blank" rel="noopener noreferrer">Hack The Box ↗</a><span>Máquinas e desafios; HTB Academy para teoria. <em>freemium</em></span></li>
+            <li><a href="https://codelivly.com/" target="_blank" rel="noopener noreferrer">Codelivly ↗</a><span>Salas, labs e trilhas variadas, em inglês. <em>grátis</em></span></li>
+          </ul>
+        </article>
+      </div>
+      <p class="fine">Links externos, sem vínculo comercial. Sugestão de plataforma? Abre uma issue.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>CYBERHUE BR · capture the flag, não o sistema dos outros.</p>
+    <p class="fine">Feito com 🧉 e capivaras · <span id="year"></span></p>
+  </footer>
+
+  <script src="/assets/main.js" defer></script>
+</body>
+</html>

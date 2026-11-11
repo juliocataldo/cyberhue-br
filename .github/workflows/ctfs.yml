@@ -1,0 +1,40 @@
+name: Atualizar agenda de CTFs
+
+on:
+  schedule:
+    - cron: '17 9 * * *'   # diário, 06:17 BRT
+  workflow_dispatch:
+
+# Menor privilégio: só escreve conteúdo do repo, nada mais.
+permissions:
+  contents: write
+
+concurrency:
+  group: ctfs
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Action pinada por SHA (v7.0.1) para evitar supply chain via tag mutável.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: true
+
+      # Node já vem no runner ubuntu-latest; o script não tem dependências.
+      - name: Buscar eventos no CTFtime
+        run: node scripts/fetch-ctfs.mjs
+
+      - name: Commit se mudou
+        run: |
+          if git diff --quiet -- data/ctfs.json; then
+            echo "nada novo"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ctfs.json
+          git commit -m "Agenda de CTFs: atualização automática"
+          git push

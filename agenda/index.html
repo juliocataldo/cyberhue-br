@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Agenda de CTFs · CyberHue BR</title>
+  <meta name="description" content="Próximos CTFs (Capture The Flag) listados no CTFtime, com horários em Brasília e filtros por formato. Atualizado todo dia pelo time CyberHue BR.">
+  <meta name="theme-color" content="#06120f">
+  <meta property="og:site_name" content="CyberHue BR">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Agenda de CTFs · CyberHue BR">
+  <meta property="og:description" content="Próximos CTFs (Capture The Flag) listados no CTFtime, com horários em Brasília e filtros por formato. Atualizado todo dia pelo time CyberHue BR.">
+  <meta property="og:image" content="https://www.cyberhue-br.dev/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://www.cyberhue-br.dev/agenda/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.cyberhue-br.dev/agenda/">
+  <link rel="icon" href="/assets/logo.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <canvas id="rain" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="/" aria-label="CyberHue BR — início">
+      <img src="/assets/logo.jpg" alt="" width="40" height="40">
+      <span>CYBER<b>HUE</b> <i>BR</i></span>
+    </a>
+    <nav aria-label="Principal">
+      <a href="/#sobre">Sobre</a>
+      <a href="/#categorias">Categorias</a>
+      <a href="/#rotina">Rotina</a>
+      <a class="nav-page" href="/agenda/" aria-current="page">Agenda</a>
+      <a class="nav-page" href="/treinar/">Treinar</a>
+      <a href="/#desafio">Desafio</a>
+      <a class="nav-cta" href="/#entrar">Entrar</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section id="agenda" class="block page">
+      <p class="kicker">// próximos 60 dias</p>
+      <h1 class="page-title"><span class="hash">#</span> agenda de ctfs</h1>
+      <p class="section-lead">Próximos CTFs listados no <a href="https://ctftime.org/event/list/upcoming" target="_blank" rel="noopener noreferrer">CTFtime</a>, atualizados todo dia. Horários em Brasília.</p>
+      <div class="filters" role="group" aria-label="Filtrar CTFs">
+        <div class="chips" role="group" aria-label="Formato">
+          <button type="button" class="chip" data-format="all" aria-pressed="true">todos</button>
+          <button type="button" class="chip" data-format="Jeopardy" aria-pressed="false">jeopardy</button>
+          <button type="button" class="chip" data-format="Attack-Defense" aria-pressed="false">attack-defense</button>
+        </div>
+        <label class="check"><input type="checkbox" id="f-open"> só abertos a todos</label>
+        <label class="check"><input type="checkbox" id="f-online"> só online</label>
+      </div>
+      <ul id="ctf-list" class="ctf-list" aria-live="polite"></ul>
+      <button type="button" id="ctf-more" class="btn ghost" hidden>ver todos</button>
+      <p id="ctf-status" class="fine">carregando agenda...</p>
+      <noscript><p class="fine">A agenda precisa de JavaScript. Veja direto no <a href="https://ctftime.org/event/list/upcoming">CTFtime</a>.</p></noscript>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>CYBERHUE BR · capture the flag, não o sistema dos outros.</p>
+    <p class="fine">Feito com 🧉 e capivaras · <span id="year"></span></p>
+  </footer>
+
+  <script src="/assets/main.js" defer></script>
+</body>
+</html>
