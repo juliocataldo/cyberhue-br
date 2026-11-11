@@ -39,6 +39,7 @@
       <a href="/#rotina">Rotina</a>
       <a class="nav-page" href="/agenda/">Agenda</a>
       <a class="nav-page" href="/treinar/" aria-current="page">Treinar</a>
+      <a class="nav-page" href="/writeups/">Writeups</a>
       <a href="/#desafio">Desafio</a>
       <a class="nav-cta" href="/#entrar">Entrar</a>
     </nav>
@@ -46,9 +47,51 @@
 
   <main id="top">
     <section id="treinar" class="block page">
-      <p class="kicker">// plataformas recomendadas</p>
+      <p class="kicker">// do zero ao primeiro ctf</p>
       <h1 class="page-title"><span class="hash">#</span> onde treinar</h1>
-      <p class="section-lead">Plataformas que a gente usa e recomenda. Começou agora? Vai na ordem: <b>primeiros passos</b>, depois escolhe uma categoria e aprofunda.</p>
+      <p class="section-lead">Começou agora? Siga a trilha abaixo, no seu ritmo. Uns 3 a 5 horas por semana bastam. Já tem base? Pule direto para as <a href="#plataformas">plataformas</a>.</p>
+
+      <h2 class="sub"><span class="hash">&gt;</span> trilha</h2>
+      <ol class="trail">
+        <li>
+          <span class="step">fase 0 · semanas 1–2</span>
+          <h3>Terminal e Linux</h3>
+          <p>Todo CTF passa pelo terminal. Faça o <a href="https://overthewire.org/wargames/bandit/" target="_blank" rel="noopener noreferrer">Bandit ↗</a> até o nível 10, pelo menos. Travou no começo? Tem o nosso <a href="/writeups/overthewire-bandit-0-3/">writeup dos níveis 0 a 3</a>.</p>
+          <p class="goal"><b>Meta:</b> se virar com <code>ssh</code>, <code>ls -la</code>, <code>cat</code>, <code>find</code>, <code>grep</code> e pipes (<code>|</code>).</p>
+        </li>
+        <li>
+          <span class="step">fase 1 · semanas 3–4</span>
+          <h3>Primeiros desafios de verdade</h3>
+          <p>No <a href="https://play.picoctf.org/practice" target="_blank" rel="noopener noreferrer">picoGym ↗</a>, resolva os desafios fáceis de <b>General Skills</b> e depois experimente um ou dois de cada categoria: web, crypto, forensics, reversing.</p>
+          <p class="goal"><b>Meta:</b> 15 desafios resolvidos e uma noção de qual categoria você mais curtiu.</p>
+        </li>
+        <li>
+          <span class="step">fase 2 · semanas 5–8</span>
+          <h3>Escolha uma categoria e aprofunde</h3>
+          <p>Web: labs <i>Apprentice</i> da <a href="https://portswigger.net/web-security/all-labs" target="_blank" rel="noopener noreferrer">PortSwigger ↗</a>. Crypto: trilha <i>Introduction</i> do <a href="https://cryptohack.org/courses/" target="_blank" rel="noopener noreferrer">CryptoHack ↗</a>. Pwn e reversing: primeiros módulos do <a href="https://pwn.college/" target="_blank" rel="noopener noreferrer">pwn.college ↗</a>. Forense: labs fáceis do <a href="https://cyberdefenders.org/" target="_blank" rel="noopener noreferrer">CyberDefenders ↗</a>.</p>
+          <p class="goal"><b>Meta:</b> aprender Python básico para scripts (requests, pwntools ou o que a categoria pedir).</p>
+        </li>
+        <li>
+          <span class="step">fase 3 · a partir da semana 8</span>
+          <h3>Primeiro CTF com o time</h3>
+          <p>Escolha na <a href="/agenda/">agenda</a> um CTF jeopardy, aberto e de peso baixo, e jogue com a gente. Não precisa resolver muito: o objetivo é viver um evento. Depois, escreva um <a href="/writeups/">writeup</a> de pelo menos um desafio, mesmo que você só tenha chegado perto.</p>
+          <p class="goal"><b>Meta:</b> uma flag em competição e o primeiro writeup publicado.</p>
+        </li>
+      </ol>
+
+      <div class="card stuck">
+        <h3>Travou? Normal. Faça assim:</h3>
+        <ul>
+          <li><b>Timebox de 45 minutos.</b> Sem progresso, mude de abordagem ou de desafio. Insistir no escuro é o que mais faz gente desistir.</li>
+          <li><b>Anote tudo.</b> O que tentou, o que viu, o que não entendeu. Metade das vezes a resposta aparece na hora de escrever.</li>
+          <li><b>Peça dica, não a resposta.</b> Explique o que já tentou. O time ajuda.</li>
+          <li><b>Leia o writeup depois</b> que o evento acabar e refaça sozinho. É assim que se aprende de verdade.</li>
+          <li><b>IA ajuda a estudar</b> (explicar um conceito, um trecho de código), mas siga sempre a regra do evento e entenda o que está fazendo.</li>
+        </ul>
+      </div>
+
+      <h2 class="sub" id="plataformas"><span class="hash">&gt;</span> plataformas</h2>
+      <p class="section-lead">As que a gente usa e recomenda, por categoria.</p>
       <div class="grid train">
         <article class="card">
           <h3>Primeiros passos</h3>

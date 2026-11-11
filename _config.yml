@@ -1,0 +1,30 @@
+# Configuração do Jekyll que o GitHub Pages já roda em todo deploy.
+# Só as páginas com front matter (---) passam pelo Jekyll; o resto é copiado como está.
+
+title: CyberHue BR
+url: https://www.cyberhue-br.dev
+lang: pt-BR
+timezone: America/Sao_Paulo
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+
+collections:
+  writeups:
+    output: true
+    permalink: /writeups/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: writeups
+    values:
+      layout: writeup
+
+# Não publicar arquivos internos do repositório.
+exclude:
+  - README.md
+  - scripts/

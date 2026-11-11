@@ -1,0 +1,92 @@
+---
+# Página processada pelo Jekyll (lista a coleção _writeups).
+---
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Writeups · CyberHue BR</title>
+  <meta name="description" content="Writeups de CTF em português do time CyberHue BR: soluções comentadas de desafios de web, pwn, crypto, forense, reversing e OSINT, do raciocínio ao comando.">
+  <meta name="theme-color" content="#06120f">
+  <meta property="og:site_name" content="CyberHue BR">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Writeups · CyberHue BR">
+  <meta property="og:description" content="Writeups de CTF em português do time CyberHue BR: soluções comentadas de desafios de web, pwn, crypto, forense, reversing e OSINT.">
+  <meta property="og:image" content="https://www.cyberhue-br.dev/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://www.cyberhue-br.dev/writeups/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.cyberhue-br.dev/writeups/">
+  <link rel="icon" href="/assets/logo.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <canvas id="rain" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="/" aria-label="CyberHue BR — início">
+      <img src="/assets/logo.jpg" alt="" width="40" height="40">
+      <span>CYBER<b>HUE</b> <i>BR</i></span>
+    </a>
+    <nav aria-label="Principal">
+      <a href="/#sobre">Sobre</a>
+      <a href="/#categorias">Categorias</a>
+      <a href="/#rotina">Rotina</a>
+      <a class="nav-page" href="/agenda/">Agenda</a>
+      <a class="nav-page" href="/treinar/">Treinar</a>
+      <a class="nav-page" href="/writeups/" aria-current="page">Writeups</a>
+      <a href="/#desafio">Desafio</a>
+      <a class="nav-cta" href="/#entrar">Entrar</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="block page">
+      <p class="kicker">// resolveu? documenta.</p>
+      <h1 class="page-title"><span class="hash">#</span> writeups</h1>
+      <p class="section-lead">Soluções comentadas pelo time, em português. A ideia não é só mostrar a flag: é explicar o raciocínio, os becos sem saída e o que dá para aprender com cada desafio.</p>
+
+      {% assign wus = site.writeups | sort: "date" | reverse %}
+      {% if wus.size > 0 %}
+      <ul class="wu-list">
+        {% for w in wus %}
+        <li class="wu-item">
+          <a href="{{ w.url }}">
+            <span class="wu-top">
+              {% if w.category %}<span class="tag">{{ w.category | escape }}</span>{% endif %}
+              <span class="wu-event">{{ w.event | escape }}</span>
+            </span>
+            <b>{{ w.title | escape }}</b>
+            {% if w.summary %}<span class="wu-sum">{{ w.summary | escape }}</span>{% endif %}
+            <span class="wu-by">{{ w.author | default: 'CyberHue BR' | escape }} · <time datetime="{{ w.date | date_to_xmlschema }}">{{ w.date | date: '%d/%m/%Y' }}</time></span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="fine">Nenhum writeup publicado ainda.</p>
+      {% endif %}
+
+      <div class="card wu-cta">
+        <h3>Quer publicar um writeup?</h3>
+        <p>Copie o <a href="https://github.com/juliocataldo/cyberhue-br/blob/main/_templates/writeup.md" target="_blank" rel="noopener noreferrer">template ↗</a>, salve em <code>_writeups/</code> e abra um pull request. Só publique writeup de CTF que já terminou e respeite as regras do evento.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>CYBERHUE BR · capture the flag, não o sistema dos outros.</p>
+    <p class="fine">Feito com 🧉 e capivaras · <span id="year"></span></p>
+  </footer>
+
+  <script src="/assets/main.js" defer></script>
+</body>
+</html>
