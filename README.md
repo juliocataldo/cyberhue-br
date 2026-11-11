@@ -2,7 +2,7 @@
 
 Time brasileiro de CTF. Capivaras que capturam flags. 🏴
 
-Site: https://cyberhue-br.dev (GitHub Pages, branch `main`, raiz, domínio customizado via `CNAME`).
+Site: https://www.cyberhue-br.dev (GitHub Pages, branch `main`, raiz, domínio customizado via `CNAME`).
 
 ## Estrutura
 
