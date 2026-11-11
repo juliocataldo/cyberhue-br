@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>CyberHue BR</title>
+  <meta name="description" content="CyberHue BR — time brasileiro de CTF. Web, Pwn, Crypto, Forensics, Reversing e OSINT. Capivaras que capturam flags.">
+  <meta name="theme-color" content="#06120f">
+  <meta property="og:title" content="CyberHue BR — Time de CTF">
+  <meta property="og:description" content="Capivaras que capturam flags. Time brasileiro de Capture The Flag.">
+  <meta property="og:image" content="assets/logo.jpg">
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <!-- recon é o primeiro passo. Q3liZXJIdWV7YzRwMXY0cjRfbjRfcjNkM30= -->
+  <canvas id="rain" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="CyberHue BR — início">
+      <img src="assets/logo.jpg" alt="" width="40" height="40">
+      <span>CYBER<b>HUE</b> <i>BR</i></span>
+    </a>
+    <nav aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#rotina">Rotina</a>
+      <a href="#desafio">Desafio</a>
+      <a class="nav-cta" href="#entrar">Entrar</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-logo">
+        <img src="assets/logo.jpg" alt="Logo CyberHue BR: capivara hacker de óculos verdes com bandeira do Brasil sobre um escudo" width="640" height="640">
+      </div>
+      <div class="hero-text">
+        <p class="kicker">// time brasileiro de CTF</p>
+        <h1>CYBER<span class="g">HUE</span> <span class="y">BR</span></h1>
+        <p class="lead">Capivaras que capturam flags. Um grupo de pessoas curiosas que quebra coisas de forma ética, aprende em conjunto e publica o que aprendeu.</p>
+        <div class="term" role="img" aria-label="Terminal: comando capture --flag">
+          <span class="p">capivara@cyberhue:~$</span> <span id="typed"></span><span class="cursor">▋</span>
+        </div>
+        <div class="ctas">
+          <a class="btn primary" href="#entrar">Quero jogar com o time</a>
+          <a class="btn ghost" href="https://github.com/juliocataldo/cyberhue-br" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="block">
+      <h2><span class="hash">#</span> sobre</h2>
+      <div class="grid three">
+        <article class="card">
+          <h3>Aprender junto</h3>
+          <p>Ninguém nasce sabendo ROP chain. Quem sabe ensina, quem não sabe pergunta. Iniciante é bem-vindo.</p>
+        </article>
+        <article class="card">
+          <h3>Write-ups abertos</h3>
+          <p>Resolveu? Documenta. Cada desafio vira write-up no repositório para o próximo que vier.</p>
+        </article>
+        <article class="card">
+          <h3>Hacking ético</h3>
+          <p>Só atacamos o que temos autorização para atacar: plataformas de CTF, laboratórios e programas de bug bounty.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="categorias" class="block">
+      <h2><span class="hash">#</span> categorias</h2>
+      <div class="grid cats">
+        <article class="cat"><span class="tag">web</span><p>SQLi, XSS, SSRF, IDOR, JWT mal configurado e afins.</p></article>
+        <article class="cat"><span class="tag">pwn</span><p>Buffer overflow, format string, heap e ROP.</p></article>
+        <article class="cat"><span class="tag">crypto</span><p>RSA fraco, XOR, padding oracle, cifras clássicas.</p></article>
+        <article class="cat"><span class="tag">forensics</span><p>PCAP, memória, disco, logs e esteganografia.</p></article>
+        <article class="cat"><span class="tag">reversing</span><p>Ghidra, binários ofuscados, crackmes e APKs.</p></article>
+        <article class="cat"><span class="tag">osint</span><p>Geolocalização, metadados e pegadas digitais.</p></article>
+        <article class="cat"><span class="tag">mobile</span><p>Android e iOS: pinning, storage inseguro, Frida.</p></article>
+        <article class="cat"><span class="tag">misc</span><p>Tudo que não cabe nas outras caixinhas.</p></article>
+      </div>
+    </section>
+
+    <section id="rotina" class="block">
+      <h2><span class="hash">#</span> rotina</h2>
+      <ol class="timeline">
+        <li><b>Treino semanal</b><span>Resolvemos desafios em plataformas como picoCTF, TryHackMe, Hack The Box e OverTheWire.</span></li>
+        <li><b>Competições</b><span>Jogamos CTFs listados no CTFtime, nacionais e internacionais, em formato jeopardy e attack-defense.</span></li>
+        <li><b>Write-up</b><span>Após cada evento, os desafios resolvidos viram write-ups no GitHub.</span></li>
+        <li><b>Retro</b><span>O que travou, o que faltou estudar e quem puxa o próximo tema.</span></li>
+      </ol>
+    </section>
+
+    <section id="desafio" class="block">
+      <h2><span class="hash">#</span> desafio de entrada</h2>
+      <div class="card challenge">
+        <p>Antes de entrar, prove que você sabe fazer recon. Existe uma flag escondida nesta página.</p>
+        <p class="hint">Formato: <code>CyberHue{...}</code> · dica: o código-fonte não morde.</p>
+        <form id="flag-form" autocomplete="off" novalidate>
+          <label for="flag" class="sr-only">Flag</label>
+          <input id="flag" name="flag" type="text" placeholder="CyberHue{...}" maxlength="64" spellcheck="false">
+          <button class="btn primary" type="submit">Submeter</button>
+        </form>
+        <p id="flag-result" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="entrar" class="block">
+      <h2><span class="hash">#</span> entrar no time</h2>
+      <div class="card join">
+        <p>Quer jogar com a gente? Abra uma <em>issue</em> no repositório se apresentando: o que você já estudou, quais categorias curte e, se tiver, seu perfil em alguma plataforma de CTF.</p>
+        <div class="ctas">
+          <a class="btn primary" href="https://github.com/juliocataldo/cyberhue-br/issues/new" target="_blank" rel="noopener noreferrer">Abrir issue ↗</a>
+          <a class="btn ghost" href="https://ctftime.org/" target="_blank" rel="noopener noreferrer">CTFtime ↗</a>
+        </div>
+        <p class="fine">Não envie dados pessoais sensíveis na issue: ela é pública.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>CYBERHUE BR · capture the flag, não o sistema dos outros.</p>
+    <p class="fine">Feito com 🧉 e capivaras · <span id="year"></span></p>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
