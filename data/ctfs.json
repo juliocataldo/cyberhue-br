@@ -1,20 +1,7 @@
 {
   "source": "https://ctftime.org",
-  "generated_at": "2026-11-11T12:30:42.026Z",
+  "generated_at": "2026-11-12T17:33:59.587Z",
   "events": [
-    {
-      "id": 3410,
-      "title": "CSAW CTF Final Round 2026",
-      "start": "2026-11-12T17:00:00.000Z",
-      "finish": "2026-11-14T05:00:00.000Z",
-      "format": "Jeopardy",
-      "restrictions": "Open",
-      "onsite": false,
-      "location": "",
-      "weight": 1,
-      "url": "https://ctf.csaw.io/",
-      "ctftime_url": "https://ctftime.org/event/3410/"
-    },
     {
       "id": 3486,
       "title": "TVX CTF 2026",
