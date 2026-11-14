@@ -1,46 +1,7 @@
 {
   "source": "https://ctftime.org",
-  "generated_at": "2026-11-13T17:10:47.226Z",
+  "generated_at": "2026-11-14T15:47:25.951Z",
   "events": [
-    {
-      "id": 3049,
-      "title": "WolvCTF 2026",
-      "start": "2026-11-13T23:00:00.000Z",
-      "finish": "2026-11-15T23:00:00.000Z",
-      "format": "Jeopardy",
-      "restrictions": "Open",
-      "onsite": false,
-      "location": "",
-      "weight": 0,
-      "url": "https://wolvctf.io/",
-      "ctftime_url": "https://ctftime.org/event/3049/"
-    },
-    {
-      "id": 3464,
-      "title": "h4ckc0n 2026",
-      "start": "2026-11-14T15:30:00.000Z",
-      "finish": "2026-11-15T15:30:00.000Z",
-      "format": "Jeopardy",
-      "restrictions": "Open",
-      "onsite": false,
-      "location": "",
-      "weight": 24.23,
-      "url": "https://h4ckc0n.ctfd.io/",
-      "ctftime_url": "https://ctftime.org/event/3464/"
-    },
-    {
-      "id": 3467,
-      "title": "InIt CTF",
-      "start": "2026-11-14T15:30:00.000Z",
-      "finish": "2026-11-14T23:30:00.000Z",
-      "format": "Jeopardy",
-      "restrictions": "Outro",
-      "onsite": false,
-      "location": "",
-      "weight": 0,
-      "url": "https://hackersinindia.com/init-ctf",
-      "ctftime_url": "https://ctftime.org/event/3467/"
-    },
     {
       "id": 3419,
       "title": "EyesOpenCTF 7th edition",
