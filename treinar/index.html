@@ -6,12 +6,12 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Onde treinar CTF · CyberHue BR</title>
-  <meta name="description" content="Plataformas gratuitas e freemium para treinar CTF e cibersegurança: web, pwn, reversing, crypto, forense e pentest. Curadoria do time CyberHue BR.">
+  <meta name="description" content="Plataformas gratuitas para treinar CTF, cibersegurança, IA, DevOps e cloud, além de ferramentas open source de AppSec. Curadoria do time CyberHue BR.">
   <meta name="theme-color" content="#06120f">
   <meta property="og:site_name" content="CyberHue BR">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Onde treinar CTF · CyberHue BR">
-  <meta property="og:description" content="Plataformas gratuitas e freemium para treinar CTF e cibersegurança: web, pwn, reversing, crypto, forense e pentest. Curadoria do time CyberHue BR.">
+  <meta property="og:description" content="Plataformas gratuitas para treinar CTF, cibersegurança, IA, DevOps e cloud, além de ferramentas open source de AppSec. Curadoria do time CyberHue BR.">
   <meta property="og:image" content="https://www.cyberhue-br.dev/assets/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="627">
@@ -49,7 +49,7 @@
     <section id="treinar" class="block page">
       <p class="kicker">// do zero ao primeiro ctf</p>
       <h1 class="page-title"><span class="hash">#</span> onde treinar</h1>
-      <p class="section-lead">Começou agora? Siga a trilha abaixo, no seu ritmo. Uns 3 a 5 horas por semana bastam. Já tem base? Pule direto para as <a href="#plataformas">plataformas</a>.</p>
+      <p class="section-lead">Começou agora? Siga a trilha abaixo, no seu ritmo. Uns 3 a 5 horas por semana bastam. Já tem base? Pule direto para as <a href="#plataformas">plataformas</a>, os jogos de <a href="#devops">devops e cloud</a> ou as <a href="#ferramentas">ferramentas de appsec</a>.</p>
 
       <h2 class="sub"><span class="hash">&gt;</span> trilha</h2>
       <ol class="trail">
@@ -106,6 +106,14 @@
           <ul class="links">
             <li><a href="https://portswigger.net/web-security" target="_blank" rel="noopener noreferrer">PortSwigger Web Security Academy ↗</a><span>A melhor referência de web: teoria + labs. <em>grátis</em></span></li>
             <li><a href="https://owasp.org/www-project-juice-shop/" target="_blank" rel="noopener noreferrer">OWASP Juice Shop ↗</a><span>App vulnerável para rodar local e quebrar. <em>grátis</em></span></li>
+            <li><a href="https://mystery.knightlab.com/" target="_blank" rel="noopener noreferrer">SQL Murder Mystery ↗</a><span>Resolva um crime escrevendo SQL. Base boa antes de estudar SQLi. <em>grátis</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>IA e prompt injection</h3>
+          <ul class="links">
+            <li><a href="https://gandalf.lakera.ai/" target="_blank" rel="noopener noreferrer">Gandalf ↗</a><span>Convença o LLM a vazar a senha, nível a nível. <em>grátis</em></span></li>
+            <li><a href="https://gandalf.lakera.ai/agent-breaker" target="_blank" rel="noopener noreferrer">Agent Breaker ↗</a><span>Ataque agentes de IA com ferramentas, não só chat. <em>grátis</em></span></li>
           </ul>
         </article>
         <article class="card">
@@ -135,7 +143,78 @@
           </ul>
         </article>
       </div>
-      <p class="fine">Links externos, sem vínculo comercial. Sugestão de plataforma? Abre uma issue.</p>
+
+      <h2 class="sub" id="devops"><span class="hash">&gt;</span> devops e cloud jogando</h2>
+      <p class="section-lead">Muito desafio de CTF roda em container, pipeline ou nuvem. Entender a infra ajuda a atacar e a defender. Menos tutorial, mais quebrar (e consertar) coisas.</p>
+      <div class="grid train">
+        <article class="card">
+          <h3>Terminal e Git</h3>
+          <ul class="links">
+            <li><a href="https://cmdchallenge.com/" target="_blank" rel="noopener noreferrer">cmdchallenge ↗</a><span>Desafios de Bash em uma linha. Bom depois do Bandit. <em>grátis</em></span></li>
+            <li><a href="https://vim-adventures.com/" target="_blank" rel="noopener noreferrer">Vim Adventures ↗</a><span>Aprenda Vim jogando um RPG. <em>freemium</em></span></li>
+            <li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreferrer">Learn Git Branching ↗</a><span>Branch, rebase e merge visual, no navegador. <em>grátis</em></span></li>
+            <li><a href="https://ohmygit.org/" target="_blank" rel="noopener noreferrer">Oh My Git! ↗</a><span>Jogo de cartas open source para entender Git. <em>grátis</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Containers e Kubernetes</h3>
+          <ul class="links">
+            <li><a href="https://k8sgames.com/" target="_blank" rel="noopener noreferrer">K8s Games ↗</a><span>Conceitos de Kubernetes em formato de jogo. <em>grátis</em></span></li>
+            <li><a href="https://github.com/ericboy0224/learn-docker-and-k8s" target="_blank" rel="noopener noreferrer">learn-docker-and-k8s ↗</a><span>Repositório com exercícios práticos de Docker e K8s. <em>grátis</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>SRE e troubleshooting</h3>
+          <ul class="links">
+            <li><a href="https://sadservers.com/" target="_blank" rel="noopener noreferrer">SadServers ↗</a><span>Servidores Linux quebrados de verdade para você consertar. <em>freemium</em></span></li>
+            <li><a href="https://devops.games/" target="_blank" rel="noopener noreferrer">devops.games ↗</a><span>Jogos de estratégia e cultura DevOps. <em>grátis</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Cloud</h3>
+          <ul class="links">
+            <li><a href="https://aws.amazon.com/training/digital/aws-cloud-quest/" target="_blank" rel="noopener noreferrer">AWS Cloud Quest ↗</a><span>RPG da AWS com labs reais na nuvem. <em>freemium</em></span></li>
+            <li><a href="https://www.skills.google/" target="_blank" rel="noopener noreferrer">Google Skills ↗</a><span>Labs e trilhas de Google Cloud. <em>freemium</em></span></li>
+          </ul>
+        </article>
+      </div>
+
+      <h2 class="sub" id="ferramentas"><span class="hash">&gt;</span> ferramentas de appsec</h2>
+      <p class="section-lead">Open source para proteger o seu próprio código, depois do CTF. Use só em sistemas que são seus ou que você tem autorização para testar.</p>
+      <div class="grid train">
+        <article class="card">
+          <h3>Scanners e SAST</h3>
+          <ul class="links">
+            <li><a href="https://github.com/semgrep/semgrep" target="_blank" rel="noopener noreferrer">Semgrep ↗</a><span>Análise estática com regras que parecem o próprio código. <em>open source</em></span></li>
+            <li><a href="https://github.com/aquasecurity/trivy" target="_blank" rel="noopener noreferrer">Trivy ↗</a><span>CVEs, misconfig, segredos e SBOM em imagens, IaC e K8s. <em>open source</em></span></li>
+            <li><a href="https://github.com/projectdiscovery/nuclei" target="_blank" rel="noopener noreferrer">Nuclei ↗</a><span>Scanner de vulnerabilidades com templates YAML da comunidade. <em>open source</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Segredos e malware</h3>
+          <ul class="links">
+            <li><a href="https://github.com/trufflesecurity/trufflehog" target="_blank" rel="noopener noreferrer">TruffleHog ↗</a><span>Acha e valida credenciais vazadas em repositórios. <em>open source</em></span></li>
+            <li><a href="https://github.com/Cisco-Talos/clamav" target="_blank" rel="noopener noreferrer">ClamAV ↗</a><span>Antivírus clássico, bom para escanear uploads. <em>open source</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Revisão de código com IA</h3>
+          <ul class="links">
+            <li><a href="https://github.com/anthropics/claude-code-security-review" target="_blank" rel="noopener noreferrer">Claude Code Security Review ↗</a><span>GitHub Action que revisa a segurança de cada PR. <em>open source</em></span></li>
+            <li><a href="https://github.com/openai/codex-security" target="_blank" rel="noopener noreferrer">Codex Security ↗</a><span>CLI da OpenAI para achar e corrigir vulnerabilidades. <em>open source</em></span></li>
+            <li><a href="https://github.com/cloudflare/security-audit-skill" target="_blank" rel="noopener noreferrer">Cloudflare Security Audit ↗</a><span>Skill de auditoria em fases para agentes de código. <em>open source</em></span></li>
+            <li><a href="https://github.com/usestrix/strix" target="_blank" rel="noopener noreferrer">Strix ↗</a><span>Agentes de IA que fazem pentest no seu app. <em>open source</em></span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Segurança de IA</h3>
+          <ul class="links">
+            <li><a href="https://github.com/microsoft/PyRIT" target="_blank" rel="noopener noreferrer">PyRIT ↗</a><span>Framework da Microsoft para red team de IA generativa. <em>open source</em></span></li>
+            <li><a href="https://github.com/NVIDIA/SkillSpector" target="_blank" rel="noopener noreferrer">SkillSpector ↗</a><span>Verifica skills e MCPs de agentes antes de instalar. <em>open source</em></span></li>
+          </ul>
+        </article>
+      </div>
+      <p class="fine">Links externos, sem vínculo comercial. Sugestão de plataforma ou ferramenta? Abre uma issue.</p>
     </section>
   </main>
 
