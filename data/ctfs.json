@@ -1,6 +1,6 @@
 {
   "source": "https://ctftime.org",
-  "generated_at": "2026-11-14T15:47:25.951Z",
+  "generated_at": "2026-11-15T16:19:05.912Z",
   "events": [
     {
       "id": 3419,
@@ -27,6 +27,19 @@
       "weight": 73.17,
       "url": "https://glacierctf.com/",
       "ctftime_url": "https://ctftime.org/event/3337/"
+    },
+    {
+      "id": 3049,
+      "title": "WolvCTF 2026",
+      "start": "2026-11-20T23:00:00.000Z",
+      "finish": "2026-11-22T23:00:00.000Z",
+      "format": "Jeopardy",
+      "restrictions": "Open",
+      "onsite": false,
+      "location": "",
+      "weight": 0,
+      "url": "https://wolvctf.io/",
+      "ctftime_url": "https://ctftime.org/event/3049/"
     },
     {
       "id": 3425,
@@ -81,6 +94,19 @@
       "ctftime_url": "https://ctftime.org/event/3436/"
     },
     {
+      "id": 3502,
+      "title": "RedReaper CTF",
+      "start": "2026-11-27T11:00:00.000Z",
+      "finish": "2026-11-27T19:00:00.000Z",
+      "format": "Jeopardy",
+      "restrictions": "Open",
+      "onsite": false,
+      "location": "",
+      "weight": 0,
+      "url": "https://qualification.redx.site/",
+      "ctftime_url": "https://ctftime.org/event/3502/"
+    },
+    {
       "id": 3474,
       "title": "LakeCTF Quals 26-27",
       "start": "2026-11-27T18:00:00.000Z",
@@ -120,6 +146,19 @@
       "ctftime_url": "https://ctftime.org/event/3489/"
     },
     {
+      "id": 3510,
+      "title": "Black Hat India 2026 Official CTF",
+      "start": "2026-11-28T14:00:00.000Z",
+      "finish": "2026-11-29T14:00:00.000Z",
+      "format": "Jeopardy",
+      "restrictions": "Open",
+      "onsite": false,
+      "location": "",
+      "weight": 0,
+      "url": "https://ctf.blackhat-india.com/",
+      "ctftime_url": "https://ctftime.org/event/3510/"
+    },
+    {
       "id": 3386,
       "title": "BlackHat MEA CTF Final 2026",
       "start": "2026-12-01T15:14:59.000Z",
@@ -131,6 +170,19 @@
       "weight": 0,
       "url": "https://blackhatmea.com/capture-the-flag",
       "ctftime_url": "https://ctftime.org/event/3386/"
+    },
+    {
+      "id": 3509,
+      "title": "2026 Qiangwang Challenge on Cyber Mimic Defense Finals",
+      "start": "2026-12-03T04:00:00.000Z",
+      "finish": "2026-12-06T04:00:00.000Z",
+      "format": "Hack quest",
+      "restrictions": "Open",
+      "onsite": true,
+      "location": "Nanjing, China",
+      "weight": 0,
+      "url": "https://nest.pmlabs.com.cn/en/events/qiangwang-9/registration",
+      "ctftime_url": "https://ctftime.org/event/3509/"
     },
     {
       "id": 3450,
@@ -185,6 +237,19 @@
       "ctftime_url": "https://ctftime.org/event/3498/"
     },
     {
+      "id": 3505,
+      "title": "OTERIA Cyber Cup #4",
+      "start": "2026-12-12T09:00:00.000Z",
+      "finish": "2026-12-12T17:00:00.000Z",
+      "format": "Jeopardy",
+      "restrictions": "Academic",
+      "onsite": true,
+      "location": "France, Gennevilliers",
+      "weight": 0,
+      "url": "https://www.oteria-cyber-cup.fr/",
+      "ctftime_url": "https://ctftime.org/event/3505/"
+    },
+    {
       "id": 3475,
       "title": "BSides Algiers 2026",
       "start": "2026-12-17T19:00:00.000Z",
@@ -224,6 +289,19 @@
       "ctftime_url": "https://ctftime.org/event/3062/"
     },
     {
+      "id": 3511,
+      "title": "THE FINAL EXPLOIT CTF 2026—QUALIFIERS",
+      "start": "2026-12-29T12:00:00.000Z",
+      "finish": "2026-12-31T12:00:00.000Z",
+      "format": "Jeopardy",
+      "restrictions": "Open",
+      "onsite": false,
+      "location": "",
+      "weight": 0,
+      "url": "https://0xv01d-ctf.xyz/",
+      "ctftime_url": "https://ctftime.org/event/3511/"
+    },
+    {
       "id": 3492,
       "title": "GaianSpace Perihelion CTF 2027",
       "start": "2027-01-02T18:00:00.000Z",
@@ -235,6 +313,19 @@
       "weight": 25,
       "url": "https://gaian.space/ctf",
       "ctftime_url": "https://ctftime.org/event/3492/"
+    },
+    {
+      "id": 3508,
+      "title": "UofTCTF 2027",
+      "start": "2027-01-09T00:00:00.000Z",
+      "finish": "2027-01-11T00:00:00.000Z",
+      "format": "Jeopardy",
+      "restrictions": "Open",
+      "onsite": false,
+      "location": "",
+      "weight": 50,
+      "url": "https://ctf.uoftctf.org/",
+      "ctftime_url": "https://ctftime.org/event/3508/"
     }
   ]
 }
