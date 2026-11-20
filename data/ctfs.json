@@ -1,20 +1,7 @@
 {
   "source": "https://ctftime.org",
-  "generated_at": "2026-11-17T18:32:17.242Z",
+  "generated_at": "2026-11-20T17:46:24.024Z",
   "events": [
-    {
-      "id": 3419,
-      "title": "EyesOpenCTF 7th edition",
-      "start": "2026-11-20T10:00:00.000Z",
-      "finish": "2026-11-22T10:00:00.000Z",
-      "format": "Jeopardy",
-      "restrictions": "Open",
-      "onsite": false,
-      "location": "",
-      "weight": 0,
-      "url": "https://eyesopensecurity.com/ctf-briefing.html",
-      "ctftime_url": "https://ctftime.org/event/3419/"
-    },
     {
       "id": 3337,
       "title": "GlacierCTF 2026",
@@ -196,6 +183,19 @@
       "weight": 0,
       "url": "https://nest.pmlabs.com.cn/en/events/qiangwang-9/registration",
       "ctftime_url": "https://ctftime.org/event/3509/"
+    },
+    {
+      "id": 3518,
+      "title": "TUCTF 2026",
+      "start": "2026-12-04T10:00:00.000Z",
+      "finish": "2026-12-06T18:00:00.000Z",
+      "format": "Jeopardy",
+      "restrictions": "Open",
+      "onsite": false,
+      "location": "",
+      "weight": 0,
+      "url": "https://tuctf.com/",
+      "ctftime_url": "https://ctftime.org/event/3518/"
     },
     {
       "id": 3450,
